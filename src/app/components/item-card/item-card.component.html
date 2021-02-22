@@ -1,0 +1,6 @@
+<mat-card>
+  <mat-card-content>
+    <p class="title">{{item?.text}}</p>
+    <img mat-card-image [src]="item?.photo" [alt]="item?.text" loading="lazy" src-fallback="{{ fallbackImage }}">
+  </mat-card-content>
+</mat-card>

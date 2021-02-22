@@ -1,0 +1,14 @@
+{
+  "title": "Test Application",
+  "item": "Item",
+  "total": "Total items: ",
+  "form": {
+    "id": "ID",
+    "id-filter": "ID Filter",
+    "text": "Title",
+    "text-filter": "Title Filter"
+  },
+  "error": {
+    "getItems": "Error getting items"
+  }
+}

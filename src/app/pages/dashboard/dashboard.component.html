@@ -1,0 +1,38 @@
+<!--header-->
+<div class="row header-wrapper">
+  <div class="col">
+    <h3 id="title">{{'title' | translate}}</h3>
+  </div>
+</div>
+<!--filter form && totals-->
+<div class="row form-wrapper dashboard-form">
+  <div class="col">
+    <form class="form" [formGroup]="filterForm" autocomplete="off">
+      <div class="row filter-wrapper">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <mat-form-field>
+            <input type="text" matInput formControlName="id" [placeholder]="'form.id-filter' | translate">
+          </mat-form-field>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <mat-form-field>
+            <input type="text" matInput formControlName="text" [placeholder]="'form.text-filter' | translate">
+          </mat-form-field>
+        </div>
+        <div class="col-lg-6 col-md-4 col-sm-12 text-right align-self-center">
+          <span *ngIf="items" id="totalItems">{{'total' | translate}}{{items?.length}}</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!--divider-->
+<mat-divider></mat-divider>
+<!--items gallery-->
+<div class="row content-wrapper" *ngIf="!loading">
+  <div class="col-lg-3 col-md-4 col-sm-6 col-12 item-wrapper" *ngFor="let item of items">
+    <app-item-card [item]="item"></app-item-card>
+  </div>
+</div>
+<!--loading spinner-->
+<app-spinner *ngIf="loading"></app-spinner>

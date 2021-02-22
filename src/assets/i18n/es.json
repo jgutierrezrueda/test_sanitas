@@ -1,0 +1,14 @@
+{
+  "title": "Aplicación Test",
+  "item": "Elemento",
+  "total": "Elementos totales: ",
+  "form": {
+    "id": "ID",
+    "id-filter": "Filtro por ID",
+    "text": "Título",
+    "text-filter": "Filtro por título"
+  },
+  "error": {
+    "getItems": "Se ha producido un error recuperando los elementos"
+  }
+}

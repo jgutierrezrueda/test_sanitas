@@ -1,0 +1,17 @@
+.form-wrapper.dashboard-form {
+  .filter-wrapper {
+    .mat-form-field {
+      width: 100%;
+    }
+  }
+}
+
+.content-wrapper {
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+  margin-top: 10px;
+
+  .item-wrapper {
+    margin-top: 10px;
+  }
+}
